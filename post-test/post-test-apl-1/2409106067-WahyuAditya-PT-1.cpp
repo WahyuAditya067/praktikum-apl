@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-const string pin = "0067";
+const string pin = "6067";
 const int maks = 3;
 
 void enter () {
@@ -13,8 +13,10 @@ void enter () {
 }
 
 int login () {
+    system("cls");
     string inputpin;
     int percobaan = 0;
+    cout << "Selamat Datang di ATM" << endl;
     while (percobaan < maks) {
         cout << "Masukkan Pin Anda : ";
         cin >> inputpin;
@@ -90,7 +92,7 @@ int main () {
             break;
         case true:
 
-        system("cls");
+        enter();
         string pilihan;
         while (true) {
             Menu();
